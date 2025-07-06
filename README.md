@@ -16,7 +16,7 @@ You can get api key from ZapCap API after registation at https://zapcap.ai/ in t
 
 ## Installation in MCP-client
 
-Add to your MCP client configuration (e.g., Claude Desktop):
+Add to your MCP client `mcp.json` configuration (e.g., Claude Desktop, Cursor and etc.):
 
 ```json
 {
@@ -32,7 +32,7 @@ Add to your MCP client configuration (e.g., Claude Desktop):
 }
 ```
 
-## Manual Installation
+## Alternative Installation
 
 ```bash
 uv tool install zapcap-mcp-server
@@ -106,4 +106,4 @@ Monitor task progress.
 
 ## License
 
-MIT
+MIT licence
