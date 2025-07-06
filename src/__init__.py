@@ -1,0 +1,1 @@
+# ZapCap MCP Server package

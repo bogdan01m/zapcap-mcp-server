@@ -166,3 +166,7 @@ def zapcap_mcp_monitor_task(request: MonitorTask) -> Dict[str, Any]:
     response.raise_for_status()
     return response.json()
 
+def main():
+    """Entry point for the MCP server."""
+    mcp.run()
+
