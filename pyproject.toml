@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zapcap-mcp-server"
-version = "0.1.6"
+version = "0.1.7"
 description = "MCP server for ZapCap.ai video processing and caption generation"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -15,8 +15,10 @@ dependencies = [
 ]
 
 [project.scripts]
-zapcap-mcp-server = "src.server:main"
+zapcap-mcp-server = "zapcap_mcp_server.server:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["src*"]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
