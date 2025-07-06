@@ -89,10 +89,12 @@ def zapcap_mcp_upload_video_by_url(request: UploadVideoByUrl) -> Dict[str, Any]:
 @mcp.tool(description="Get available templates from ZapCap")
 def zapcap_mcp_get_templates() -> Dict[str, Any]:
     return {
-        "templates_url": "https://platform.zapcap.ai/dashboard/templates",
-        "message": "Templates are available in the ZapCap dashboard with preview images",
-        "instructions": "1. Visit the dashboard URL above\n2. Browse templates with visual previews\n3. Copy the template ID for use in create_task",
-        "note": "Templates include various caption styles, animations, and layouts"
+        "result": {
+            "templates_url": "https://platform.zapcap.ai/dashboard/templates",
+            "message": "Templates are available in the ZapCap dashboard with preview images",
+            "instructions": "1. Visit the dashboard URL above\n2. Browse templates with visual previews\n3. Copy the template ID for use in create_task",
+            "note": "Templates include various caption styles, animations, and layouts"
+        }
     }
 
 @mcp.tool(description="Create video processing task with full customization options")
