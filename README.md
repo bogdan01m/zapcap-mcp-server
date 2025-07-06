@@ -1,5 +1,8 @@
 # ZapCap MCP Server
 
+[![PyPI version](https://badge.fury.io/py/zapcap-mcp-server.svg)](https://pypi.org/project/zapcap-mcp-server/)
+[![MCP Server](https://img.shields.io/badge/MCP-Server-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://modelcontextprotocol.io/)
+
 **NOTE**: This is an unofficial implementation of MCP Server for ZapCap.
 
 An MCP (Model Context Protocol) server that provides tools for uploading videos, creating processing tasks, and monitoring their progress through the [ZapCap API](https://zapcap.ai/).
@@ -52,11 +55,11 @@ export ZAPCAP_API_KEY="your_api_key_here"
 
 **How to use:**
 
-[assets/how_to_use.mp4](assets/how_to_use.mp4)
+[<img src="https://img.youtube.com/vi/GcoyTgTVd6Q/maxresdefault.jpg" width="100%">](https://youtu.be/GcoyTgTVd6Q)
 
 **Results:**
 
-[assets/result.mp4](assets/result.mp4)
+[<img src="https://img.youtube.com/vi/rxqAQZRiyxA/maxresdefault.jpg" width="100%">](https://youtu.be/rxqAQZRiyxA)
 
 ### Available Tools
 
