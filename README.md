@@ -1,2 +1,2 @@
 # zapcap-mcp-server
-# MCP Server for ZapCap.ai (unofficial)
+**NOTE**:  This is unofficial implementation of MCP Server for ZapCap.ai
