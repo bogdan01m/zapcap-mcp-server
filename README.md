@@ -48,6 +48,18 @@ export ZAPCAP_API_KEY="your_api_key_here"
 
 ## Usage
 
+### Demo Videos
+
+**How to use:**
+
+[assets/how_to_use.mp4](assets/how_to_use.mp4)
+
+**Results:**
+
+[assets/result.mp4](assets/result.mp4)
+
+### Available Tools
+
 The server provides the following tools:
 
 ### zapcap_mcp_upload_video
