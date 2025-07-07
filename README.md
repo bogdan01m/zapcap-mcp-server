@@ -2,6 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/zapcap-mcp-server.svg)](https://pypi.org/project/zapcap-mcp-server/)
 [![MCP Server](https://img.shields.io/badge/MCP-Server-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://modelcontextprotocol.io/)
+[![Author](https://img.shields.io/badge/by-Bogdan%20Minko-purple?style=flat)](https://bogdan01m.github.io/)
 
 **NOTE**: This is an unofficial implementation of MCP Server for ZapCap.
 
