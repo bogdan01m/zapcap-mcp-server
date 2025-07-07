@@ -119,6 +119,65 @@ Monitor task progress.
 - `video_id`: Video ID
 - `task_id`: Task ID
 
+## Benefits Over Direct API Usage
+
+### Token Management
+Unlike using curl or direct API calls where you need to manually include your API key in every request:
+
+```bash
+# Traditional curl approach - token needed every time
+curl -X POST "https://api.zapcap.ai/upload" \
+  -H "Authorization: Bearer your_token_here" \
+  -F "file=@video.mp4"
+```
+
+With this MCP server, your API key is configured once in the environment and automatically used for all operations:
+
+```json
+{
+  "env": {
+    "ZAPCAP_API_KEY": "your_api_key_here"
+  }
+}
+```
+
+### Natural Language Interface
+Instead of constructing complex API requests with parameters, you can describe what you want:
+
+**Traditional API:** 
+```bash
+curl -X POST "https://api.zapcap.ai/tasks" \
+  -H "Authorization: Bearer token" \
+  -d '{
+    "video_id": "abc123",
+    "template_id": "viral",
+    "font_size": 30,
+    "highlight_color_1": "#00ff00",
+    "enable_broll": true,
+    "broll_percent": 40
+  }'
+```
+
+**MCP Server:**
+```
+"Add green highlighted subtitles with 40% B-roll using viral template"
+```
+
+### Type Safety & Validation
+- **Pydantic Integration**: All parameters are validated automatically with type checking
+
+## Future Plans
+
+### Testing Integration
+We're planning to add basic testing capabilities:
+
+- **API Integration Tests**: Verify that ZapCap API calls work correctly
+- **MCP Tool Tests**: Ensure all MCP tools respond properly to requests
+
+### Planned Features
+- **Named configurations**: Save frequently used parameter combinations ("my_brand", "youtube_style")
+- **Template enhancement**: Override template defaults with consistent brand colors/fonts
+
 ## License
 
 MIT licence
