@@ -42,6 +42,36 @@ Add to your MCP client `mcp.json` configuration (e.g., Claude Desktop, Cursor an
 uv tool install zapcap-mcp-server
 ```
 
+## Docker Installation
+
+You can also run the MCP server in a Docker container using the pre-built image from Docker Hub:
+
+### Using pre-built image from Docker Hub:
+```json
+{
+  "mcpServers": {
+    "zapcap": {
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "-e", "ZAPCAP_API_KEY=your_api_key_here", "bogdanm/zapcap-mcp-server:latest"],
+      "env": {}
+    }
+  }
+}
+```
+
+### Manual Docker usage:
+```bash
+docker run -e ZAPCAP_API_KEY="your_api_key_here" bogdanm/zapcap-mcp-server:latest
+```
+
+### Build your own image (optional):
+If you prefer to build the image yourself:
+
+```bash
+docker build -t zapcap-mcp-server .
+docker run -e ZAPCAP_API_KEY="your_api_key_here" zapcap-mcp-server
+```
+
 ## Configuration
 
 Set your ZapCap API key as an environment variable:
