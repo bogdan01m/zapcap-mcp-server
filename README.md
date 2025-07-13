@@ -52,24 +52,22 @@ You can also run the MCP server in a Docker container using the pre-built image 
   "mcpServers": {
     "zapcap": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "-e", "ZAPCAP_API_KEY=your_api_key_here", "bogdanm/zapcap-mcp-server:latest"],
-      "env": {}
+      "args": [
+        "run", 
+        "--rm", 
+        "--init",
+        "-i",
+        "--net=host",
+        "-v", "/home/$USER:/host/home/$USER",
+        "-e", "ZAPCAP_API_KEY=your_api_key_here",
+        "bogdan01m/zapcap-mcp-server:latest"
+      ],
+      "env": {
+        "DOCKER_CLI_HINTS": "false"
+      }
     }
   }
 }
-```
-
-### Manual Docker usage:
-```bash
-docker run -e ZAPCAP_API_KEY="your_api_key_here" bogdanm/zapcap-mcp-server:latest
-```
-
-### Build your own image (optional):
-If you prefer to build the image yourself:
-
-```bash
-docker build -t zapcap-mcp-server .
-docker run -e ZAPCAP_API_KEY="your_api_key_here" zapcap-mcp-server
 ```
 
 ## Configuration
