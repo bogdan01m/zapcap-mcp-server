@@ -6,13 +6,16 @@
 
 **NOTE**: This is an unofficial implementation of MCP Server for ZapCap.
 
+<a href="https://glama.ai/mcp/servers/@bogdan01m/zapcap-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@bogdan01m/zapcap-mcp-server/badge" alt="zapcap-mcp-server MCP server" />
+</a>
+
 An MCP (Model Context Protocol) server that provides tools for uploading videos, creating processing tasks, and monitoring their progress through the [ZapCap API](https://zapcap.ai/).
 
 ## Requirements
 
 - uv 
 - ZapCap API key
-
 
 You can install uv from here: https://docs.astral.sh/uv/
 
